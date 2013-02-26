@@ -1,0 +1,185 @@
+.ttip
+{
+    background-color:#ffffdd;
+    color:black;
+
+}
+
+.pending-row
+{
+    background-color: #dfc;
+    /*border: 1px solid red;*//* #80a6dc;*/
+    /*opacity: 0.5;*/
+    /*color: red;*/
+
+}
+
+.pending-row .x-grid-cell
+{
+    background-color: transparent ;
+    /*opacity: 0.5;*/
+}
+
+
+.rejected-row
+{
+    background-color: #fcc;
+    /*opacity: 0.5;*/
+    /*color: red;*/
+}
+
+.approved-sym
+{
+    color: #FFFFFF;
+    font-size: 20px;
+    position:relative;
+    top:8px;
+    cursor: default;
+    background-color: #FFFFFF;
+}
+
+.pending-sym
+{
+    /*
+    color: #80a6dc;
+    font-size: 20px;
+    position:relative;
+    top:8px;
+    cursor: default;
+    */
+    background-image: url("../images/blue_star.png") ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:100%;
+
+}
+
+
+.rejected-sym
+{
+    /*
+    color: #ff469b;
+    font-size: 15px;
+    position:relative;
+    top:9px;
+    cursor: default;
+    */
+    background-image: url("../images/rosy_triangle.png") ;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:100%;
+
+}
+
+
+
+.rejected-row .x-grid-cell
+{
+    background-color: transparent;
+    /*opacity: 0.5;*/
+}
+
+
+.x-mask
+{
+
+    opacity: 0.1;
+}
+
+.addCommentButton
+{
+    white-space: nowrap;
+    height:21px;
+    overflow: hidden;
+    font-size: 11px;
+    font-weight: normal;
+    font-family: Cousine,tahoma,arial,verdana,sans-serif;
+    color: #333;
+    padding-top: 0px;
+    padding-right: 4px;
+    padding-bottom: 0px;
+    padding-left: 4px;
+}
+.addCommentButton img
+{
+    vertical-align: middle;
+    margin-right: 6px;
+}
+
+.active-label
+{
+    font-weight: bold;
+    color: red;
+}
+
+.nonactive-label
+{
+
+}
+
+
+/*
+.x-btn-default-toolbar-small .x-btn-inner {
+    font-size: 11px;
+    font-weight: normal;
+    font-family: tahoma,arial,verdana,sans-serif;
+    color: #333;
+    background-repeat: no-repeat;
+    padding: 0 4px;
+    padding-top: 0px;
+    padding-right: 4px;
+    padding-bottom: 0px;
+    padding-left: 4px;
+}
+*/
+/*
+.edit_icon
+{
+    background-image: url("images/edit16.png") ;
+    background-repeat: none;
+}
+
+.comment_icon
+{
+    background-image: url("images/comment.png") ;
+    background-repeat: none;
+}
+
+.export_icon
+{
+    background-image: url("images/microsoft_office_2003_excel.png") ;
+    background-repeat: none;
+}
+
+.gear_icon
+{
+    background-image: url("images/gear_blue.png") ;
+    background-repeat: none;
+}
+
+.list_icon
+{
+    background-image: url("images/text_list_bullets.png") ;
+    background-repeat: none;
+}
+*/
+
+/*
+.x-grid-cell-inner
+{
+    font-family: Verdana, Cousine;
+    font-size: 10px;
+}
+*/
+
+.x-grid-cell-inner {
+    overflow: hidden;
+    /*padding: 3px 6px;*/
+    white-space: nowrap;
+    height: 21px;;
+}
+
+.x-toolbar-default
+{
+    background-image: none;
+}

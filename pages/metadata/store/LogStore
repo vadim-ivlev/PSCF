@@ -1,0 +1,79 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "LogStore",
+        "storeId": "MyJsonStore2",
+        "model": "FiscalDataLogModel"
+    },
+    "id": "ExtBox1-ext-gen8816",
+    "designerId": "b27bfd99-ea28-4263-91db-f0a539a97704",
+    "cn": [
+        {
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy2",
+                "designer|displayName": "LogProxy"
+            },
+            "designerId": "647866b7-5f91-4227-b49c-f97dc49dc9e4",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader2",
+                        "designer|displayName": "LogReader",
+                        "idProperty": "log_id"
+                    },
+                    "designerId": "fa317de3-0863-4984-b679-d1f8e1b23257"
+                },
+                {
+                    "type": "jsonwriter",
+                    "reference": {
+                        "name": "writer",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonWriter1",
+                        "designer|displayName": "LogWriter",
+                        "writeAllFields": false,
+                        "allowSingle": false
+                    },
+                    "designerId": "1b2ac9d9-7076-4954-ab3b-f0e6c23522e3"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onJsonstoreUpdate",
+                "fn": "onJsonstoreUpdate",
+                "implHandler": [
+                    "//GLOB.updateLogRecord();"
+                ],
+                "name": "update",
+                "scope": "me"
+            },
+            "designerId": "7b996844-bcc9-422c-a274-6e3c17434689"
+        }
+    ]
+}

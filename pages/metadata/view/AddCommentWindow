@@ -1,0 +1,174 @@
+{
+    "type": "window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "AddCommentWindow",
+        "autoShow": false,
+        "border": null,
+        "floating": true,
+        "frame": false,
+        "height": 250,
+        "id": "commentWindow",
+        "itemId": "commentWindowItem",
+        "width": 400,
+        "shadowOffset": 32,
+        "layout": "fit",
+        "bodyBorder": false,
+        "animCollapse": false,
+        "frameHeader": false,
+        "hideCollapseTool": false,
+        "icon": "images/comment2.png",
+        "title": "Add a new comment to the record",
+        "maximizable": true,
+        "minimizable": true,
+        "modal": true,
+        "plain": false
+    },
+    "id": "ExtBox1-ext-gen13948",
+    "designerId": "0108f563-e863-4723-9bd6-2779116dfa7e",
+    "cn": [
+        {
+            "type": "textareafield",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyTextArea",
+                "border": 0,
+                "id": "txtNewComment",
+                "fieldLabel": "Label",
+                "hideLabel": true
+            },
+            "designerId": "f0e31eee-1e68-45c8-97ea-8d42ba66b888"
+        },
+        {
+            "type": "toolbar",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "bottom",
+                "designer|userClassName": "MyToolbar3"
+            },
+            "designerId": "3ccef57b-ff12-4858-9994-78e5f743164e",
+            "cn": [
+                {
+                    "type": "tbspacer",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "designer|userClassName": "MySpacer1"
+                    },
+                    "designerId": "f770de50-17f6-4c78-9b6e-6e1b1cade849"
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton7",
+                        "id": "btnCancelNewComment",
+                        "text": "Cancel"
+                    },
+                    "designerId": "9474cb62-db5e-4dac-849a-6fe8cb6709b8",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "onBtnCancelNewCommentClick",
+                                "fn": "onBtnCancelNewCommentClick",
+                                "implHandler": [
+                                    "",
+                                    "GLOB.hideCommentWindow();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "designerId": "f4a1cbf6-0aad-4400-86d6-9edee4450dcb"
+                        }
+                    ]
+                },
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyButton6",
+                        "id": "btnOkNewComment",
+                        "width": 80,
+                        "text": "Ok"
+                    },
+                    "designerId": "17f58b7e-7db5-4e05-a782-d8bde2f79449",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "onBtnOkNewCommentClick",
+                                "fn": "onBtnOkNewCommentClick",
+                                "implHandler": [
+                                    "var textInput=Ext.getCmp(\"txtNewComment\");",
+                                    "var commentText=textInput.getValue();",
+                                    "GLOB.addCommentToTheSelectedRecord(commentText,null);",
+                                    "",
+                                    "GLOB.hideCommentWindow();",
+                                    ""
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "designerId": "7a7d05e8-ce2d-4020-8789-77d82fe1d448"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onCommentWindowShow",
+                "fn": "onCommentWindowShow",
+                "implHandler": [
+                    "Ext.getCmp(\"txtNewComment\").focus(true,100);"
+                ],
+                "name": "show",
+                "scope": "me"
+            },
+            "designerId": "19999f4c-ea95-435a-9dbd-eafdf1ccac56"
+        }
+    ]
+}

@@ -1,0 +1,150 @@
+{
+    "name": "pages",
+    "settings": {
+        "urlPrefix": "http://localhost:8080/pages/",
+        "spacesToIndent": 4,
+        "exportPath": "",
+        "sdkPath": "",
+        "lineEnding": "LF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 678,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "ext41",
+    "topInstanceFileMap": {
+        "9537f606-d8ab-4bf1-a15c-969bc3dd2a39": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        },
+        "c5b7b79c-3ed0-404e-bae2-5cc1c30ee235": {
+            "paths": [
+                "metadata/view/MyViewport",
+                "app/view/override/MyViewport.js",
+                "app/view/MyViewport.js",
+                "app/view/Viewport.js"
+            ],
+            "className": "MyViewport"
+        },
+        "077fa1e0-0500-45a5-96f6-b2a1b757c7cd": {
+            "paths": [
+                "metadata/resource/css"
+            ],
+            "className": "css"
+        },
+        "ea58a06a-2e35-4216-92d9-d1a49724353b": {
+            "paths": [
+                "metadata/resource/js1"
+            ],
+            "className": "js1"
+        },
+        "3d97b1fa-4278-4a37-9205-59934c86b528": {
+            "paths": [
+                "metadata/resource/js"
+            ],
+            "className": "js"
+        },
+        "c8ffce24-ba00-4762-ad6d-0decf75d3546": {
+            "paths": [
+                "metadata/store/CountriesJsonStore",
+                "app/store/override/CountriesJsonStore.js",
+                "app/store/CountriesJsonStore.js"
+            ],
+            "className": "CountriesJsonStore"
+        },
+        "85ca0dd4-e1da-4ee7-8e79-3d105fb7f00a": {
+            "paths": [
+                "metadata/store/FiscalDataStore",
+                "app/store/override/FiscalDataStore.js",
+                "app/store/FiscalDataStore.js"
+            ],
+            "className": "FiscalDataStore"
+        },
+        "f6b94513-4914-4f50-83ae-c4a305728f6e": {
+            "paths": [
+                "metadata/model/FiscalDataModel",
+                "app/model/override/FiscalDataModel.js",
+                "app/model/FiscalDataModel.js"
+            ],
+            "className": "FiscalDataModel"
+        },
+        "366c6cdf-2ed5-4321-8b85-385be4684f59": {
+            "paths": [
+                "metadata/resource/css1"
+            ],
+            "className": "css1"
+        },
+        "0108f563-e863-4723-9bd6-2779116dfa7e": {
+            "paths": [
+                "metadata/view/AddCommentWindow",
+                "app/view/override/AddCommentWindow.js",
+                "app/view/AddCommentWindow.js"
+            ],
+            "className": "AddCommentWindow"
+        },
+        "b27bfd99-ea28-4263-91db-f0a539a97704": {
+            "paths": [
+                "metadata/store/LogStore",
+                "app/store/override/LogStore.js",
+                "app/store/LogStore.js"
+            ],
+            "className": "LogStore"
+        },
+        "4167f9f8-2c65-4fbb-8aca-30c3c0f7a56c": {
+            "paths": [
+                "metadata/view/CommentButton",
+                "app/view/override/CommentButton.js",
+                "app/view/CommentButton.js"
+            ],
+            "className": "CommentButton"
+        },
+        "0e38a83a-96ae-4622-b97e-523d9a3a4445": {
+            "paths": [
+                "metadata/view/FiscalDataLogGrid",
+                "app/view/override/FiscalDataLogGrid.js",
+                "app/view/FiscalDataLogGrid.js"
+            ],
+            "className": "FiscalDataLogGrid"
+        },
+        "747cbd27-4347-4f1c-89f4-66a0d3f8a408": {
+            "paths": [
+                "metadata/model/FiscalDataLogModel",
+                "app/model/override/FiscalDataLogModel.js",
+                "app/model/FiscalDataLogModel.js"
+            ],
+            "className": "FiscalDataLogModel"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "c5b7b79c-3ed0-404e-bae2-5cc1c30ee235",
+            "0108f563-e863-4723-9bd6-2779116dfa7e",
+            "4167f9f8-2c65-4fbb-8aca-30c3c0f7a56c",
+            "0e38a83a-96ae-4622-b97e-523d9a3a4445"
+        ],
+        "store": [
+            "c8ffce24-ba00-4762-ad6d-0decf75d3546",
+            "85ca0dd4-e1da-4ee7-8e79-3d105fb7f00a",
+            "b27bfd99-ea28-4263-91db-f0a539a97704"
+        ],
+        "controller": [],
+        "model": [
+            "f6b94513-4914-4f50-83ae-c4a305728f6e",
+            "747cbd27-4347-4f1c-89f4-66a0d3f8a408"
+        ],
+        "resource": [
+            "9537f606-d8ab-4bf1-a15c-969bc3dd2a39",
+            "077fa1e0-0500-45a5-96f6-b2a1b757c7cd",
+            "3d97b1fa-4278-4a37-9205-59934c86b528",
+            "ea58a06a-2e35-4216-92d9-d1a49724353b",
+            "366c6cdf-2ed5-4321-8b85-385be4684f59"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "cssresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "http://extjs.cachefly.net/ext-4.1.1-gpl/resources/css/ext-all-gray.css"
+    },
+    "id": "ExtBox1-ext-gen42425",
+    "designerId": "077fa1e0-0500-45a5-96f6-b2a1b757c7cd"
+}

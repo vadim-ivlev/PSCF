@@ -1,0 +1,1597 @@
+{
+    "type": "viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "container|padding": null,
+        "designer|userClassName": "MyViewport",
+        "designer|initialView": true,
+        "hidden": false,
+        "style": [
+            "background-color:#FFF;"
+        ],
+        "overflowY": null,
+        "layout": "border"
+    },
+    "id": "ExtBox1-ext-gen8571",
+    "designerId": "c5b7b79c-3ed0-404e-bae2-5cc1c30ee235",
+    "cn": [
+        {
+            "type": "container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "north",
+                "layout|split": false,
+                "layout|splitterResize": false,
+                "container|align": "stretch",
+                "container|padding": "0 0 5 0",
+                "designer|userClassName": "MyContainer",
+                "border": null,
+                "frame": false,
+                "height": null,
+                "hidden": false,
+                "id": "headerContainer",
+                "loader": [
+                    "{",
+                    "    url: \"header.html\",",
+                    "    autoLoad: false",
+                    "}"
+                ],
+                "layout": "vbox"
+            },
+            "designerId": "7826a9c9-5b65-4121-b33f-d4f5ade2b610",
+            "cn": [
+                {
+                    "type": "label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "designer|userClassName": "MyLabel2",
+                        "style": "color:#333; font-size:12px; ",
+                        "text": "SOVEREIGN FISCAL DATA"
+                    },
+                    "configAlternates": {
+                        "style": "string"
+                    },
+                    "designerId": "34c09d33-50dc-4eca-9d82-35d2841b8f26"
+                }
+            ]
+        },
+        {
+            "type": "panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|floatable": false,
+                "layout|region": "center",
+                "designer|userClassName": "MyPanel1",
+                "baseCls": null,
+                "border": 0,
+                "floating": false,
+                "frame": false,
+                "id": "container",
+                "shadowOffset": null,
+                "layout": "card",
+                "bodyBorder": false,
+                "bodyPadding": null,
+                "frameHeader": false,
+                "header": false,
+                "hideCollapseTool": false,
+                "title": "Sovereign Fiscal Data"
+            },
+            "designerId": "5430264a-15f5-4f32-8439-7d15f9b9f27f",
+            "cn": [
+                {
+                    "type": "container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyContainer1",
+                        "style": "background-color:white;",
+                        "layout": "border"
+                    },
+                    "configAlternates": {
+                        "style": "string"
+                    },
+                    "designerId": "8ccf720c-0f4e-4cd7-92d1-1a11eeca3791",
+                    "cn": [
+                        {
+                            "type": "toolbar",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|region": "north",
+                                "container|padding": 2,
+                                "designer|userClassName": "MyToolbar",
+                                "border": "1 1 0 1",
+                                "cls": null,
+                                "frame": false,
+                                "height": null,
+                                "style": [
+                                    "{",
+                                    "background-color: #FFFFFF;",
+                                    "background-image:none;",
+                                    "}"
+                                ]
+                            },
+                            "designerId": "9012c620-9708-4cf7-9cd3-e23c22cf773b",
+                            "cn": [
+                                {
+                                    "type": "button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "layout|margins": "0 0 0 0",
+                                        "designer|userClassName": "MyButton10",
+                                        "id": "refreshFiscalDataGridButton",
+                                        "icon": "images/view_refresh.png",
+                                        "text": null,
+                                        "tooltip": "Refresh"
+                                    },
+                                    "configAlternates": {
+                                        "tooltip": "string"
+                                    },
+                                    "designerId": "43c4a471-eb6e-4d6b-bd5a-c3da65b77619",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "onRefreshFiscalDataGridButtonClick1",
+                                                "fn": "onRefreshFiscalDataGridButtonClick1",
+                                                "implHandler": [
+                                                    "GLOB.refreshFiscalDataGrid();"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "designerId": "9213c72e-1bf6-44c5-8fb8-fcc70e519333"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "combobox",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "designer|userClassName": "MyComboBox",
+                                        "id": "cmbCountry",
+                                        "width": 178,
+                                        "value": null,
+                                        "fieldLabel": "Country",
+                                        "hideLabel": true,
+                                        "displayField": "country",
+                                        "queryMode": "local",
+                                        "store": "CountriesJsonStore",
+                                        "valueField": "iso"
+                                    },
+                                    "designerId": "bca854c0-a4bc-410f-b1d9-f7ab0061142b",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "onCmbCountrySelect",
+                                                "fn": "onCmbCountrySelect",
+                                                "implHandler": [
+                                                    "var v=combo.getValue();",
+                                                    "var store=Ext.getStore(\"FiscalDataStore\");",
+                                                    "var proxy=store.getProxy();",
+                                                    "proxy.url=GLOB.SOVDEF_URL+v;",
+                                                    "store.load();",
+                                                    "GLOB.saveState();",
+                                                    "GLOB.clearPanels();"
+                                                ],
+                                                "name": "select",
+                                                "scope": "me"
+                                            },
+                                            "designerId": "1f3494d8-d468-43b9-bb1d-02e154f9f826"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "designer|userClassName": "MyButton4",
+                                        "id": "btnEdit",
+                                        "allowDepress": false,
+                                        "enableToggle": false,
+                                        "icon": "images/edit16.png",
+                                        "pressed": false,
+                                        "text": "Edit",
+                                        "tooltip": [
+                                            "",
+                                            "<b>Edit selected record</b><hr/>",
+                                            "Another way is to",
+                                            "<b>Double click</b> on a record.",
+                                            "<hr/>",
+                                            "You must be logined in to edit records.",
+                                            "",
+                                            ""
+                                        ]
+                                    },
+                                    "designerId": "ad71f724-b5a6-4e43-a429-f4fdcea299ee",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "onBtnEditClick",
+                                                "fn": "onBtnEditClick",
+                                                "implHandler": [
+                                                    "",
+                                                    "var lastSelected=GLOB.getSelectedRecord();",
+                                                    "if (! lastSelected ) ",
+                                                    "{",
+                                                    "    alert (\"Please select a record first.\\nOr Double-Click on a record to start editing.\");",
+                                                    "    return;",
+                                                    "}",
+                                                    "",
+                                                    "var grid=Ext.getCmp(\"gridFiscalData\");",
+                                                    "var editor=grid.getPlugin(\"rowEditor\");",
+                                                    "editor.startEdit(lastSelected,0);",
+                                                    ""
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "designerId": "f6504c85-8c53-4ddb-ab9f-8c4c398a0d58"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "designer|userClassName": "MyButton5",
+                                        "designer|displayName": "btnShowComments",
+                                        "id": "btnShowComments",
+                                        "icon": "images/comment2.png",
+                                        "text": "Show comments",
+                                        "tooltip": [
+                                            "<b>Show user comments to the selected record</b>"
+                                        ]
+                                    },
+                                    "designerId": "5597ba16-d8ea-4a65-9016-e2326d136743",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "onBtnShowCommentsClick",
+                                                "fn": "onBtnShowCommentsClick",
+                                                "implHandler": [
+                                                    "var commentPanel=Ext.getCmp(\"panelRecordComments\");",
+                                                    "if (commentPanel.isHidden()) ",
+                                                    "{",
+                                                    "    commentPanel.show();",
+                                                    "    button.setText(\"Hide comments\");",
+                                                    "    var record=GLOB.getSelectedRecord();",
+                                                    "    if (record)",
+                                                    "    {",
+                                                    "        GLOB.showTextOnTheCommentPanel(record.raw.user_comment);",
+                                                    "    }",
+                                                    "}",
+                                                    "else",
+                                                    "{",
+                                                    "    commentPanel.hide();",
+                                                    "    button.setText(\"Show comments\");",
+                                                    "}    ",
+                                                    "",
+                                                    "GLOB.saveState();"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "designerId": "a65e58a3-1e9a-424c-9aaa-6eaf8c0d2e8c"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "designer|userClassName": "MyButton3",
+                                        "disabled": false,
+                                        "id": "btnShowHistory",
+                                        "icon": "images/text_list_bullets.png",
+                                        "text": "Show audit trail",
+                                        "tooltip": [
+                                            "<b>Show log of changes to the selected record</b><br>",
+                                            "<hr/>",
+                                            "You must be logined in and have \"<b>moderator</b>\" privileges to edit the log.",
+                                            "<hr/>",
+                                            "Contact Marc Joffe <a href=\"mailto:marc@publicsectorcredit.org\">marc@publicsectorcredit.org</a> if you want to join."
+                                        ]
+                                    },
+                                    "designerId": "f6c6887b-f568-428f-9a3c-d3f23aa685af",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "onBtnShowHistoryClick",
+                                                "fn": "onBtnShowHistoryClick",
+                                                "implHandler": [
+                                                    "var cont=Ext.getCmp(\"fiscalDataLogGrid\");",
+                                                    "",
+                                                    "if (cont.hidden) ",
+                                                    "{",
+                                                    "    cont.show();",
+                                                    "    GLOB.showFiscalDataLog();",
+                                                    "    button.setText(\"Hide audit trail\");",
+                                                    "}",
+                                                    "else",
+                                                    "{",
+                                                    "    cont.hide();",
+                                                    "    button.setText(\"Show audit trail\");",
+                                                    "}",
+                                                    "",
+                                                    "GLOB.saveState();"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "designerId": "3bfd35f3-7727-4d4d-8bb1-0e449fae175b"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "tbspacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "designer|userClassName": "MySpacer"
+                                    },
+                                    "designerId": "e9c2de94-6535-4411-933a-8c85cefda05f"
+                                },
+                                {
+                                    "type": "button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "designer|userClassName": "MyButton",
+                                        "floating": false,
+                                        "frame": true,
+                                        "id": "btnExport",
+                                        "icon": "images/browser_download.png",
+                                        "scale": null,
+                                        "text": null,
+                                        "tooltip": "Export data to Excel (CSV)"
+                                    },
+                                    "configAlternates": {
+                                        "tooltip": "string"
+                                    },
+                                    "designerId": "9afb48d0-ccbd-468d-8e3f-8a56d0108ccc",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "onBtnExportClick",
+                                                "fn": "onBtnExportClick",
+                                                "implHandler": [
+                                                    "GLOB.exportToExcel();"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "designerId": "7c97f244-d313-409d-85f1-980619496e94"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "designer|userClassName": "MyButton1",
+                                        "id": "btnLeaveComment",
+                                        "width": null,
+                                        "icon": "images/bubble16.png",
+                                        "text": null,
+                                        "tooltip": [
+                                            "Leave a general comment",
+                                            ""
+                                        ]
+                                    },
+                                    "designerId": "1c4faf25-b86e-43cf-9245-5e298cabf43c",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "onBtnLeaveCommentClick",
+                                                "fn": "onBtnLeaveCommentClick",
+                                                "implHandler": [
+                                                    "Ext.getCmp('container').getLayout().setActiveItem(1);"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "designerId": "fcc56c3e-d117-4461-b321-63a54efdccfe"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "designer|userClassName": "MyContainer3",
+                                        "loader": [
+                                            "{",
+                                            "    url: \"/getloginlink\",",
+                                            "    autoLoad: true",
+                                            "}"
+                                        ],
+                                        "maxWidth": null,
+                                        "width": null
+                                    },
+                                    "designerId": "5ca3a70c-bf20-463b-9036-5b3988a9b611"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "gridpanel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": 1,
+                                "layout|region": "center",
+                                "designer|userClassName": "MyGridPanel",
+                                "border": null,
+                                "frame": false,
+                                "id": "gridFiscalData",
+                                "bodyBorder": false,
+                                "collapsed": false,
+                                "collapsible": false,
+                                "frameHeader": false,
+                                "header": false,
+                                "headerPosition": null,
+                                "hideCollapseTool": true,
+                                "title": "Sovereign Fiscal Data",
+                                "titleCollapse": false,
+                                "hideHeaders": false,
+                                "store": "FiscalDataStore",
+                                "verticalScroller": [
+                                    "{",
+                                    "  // xtype: 'paginggridscroller',",
+                                    "  // activePrefetch: false",
+                                    "    ",
+                                    "        trailingBufferZone: 10,  // Keep 200 records buffered in memory behind scroll",
+                                    "        leadingBufferZone: 10   // Keep 5000 records buffered in memory ahead of scroll",
+                                    "    ",
+                                    "}",
+                                    ""
+                                ]
+                            },
+                            "designerId": "f5ecbf08-c8b2-45f3-bac7-a7a78d93d649",
+                            "cn": [
+                                {
+                                    "type": "gridview",
+                                    "reference": {
+                                        "name": "viewConfig",
+                                        "type": "object"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyGridView",
+                                        "padding": null,
+                                        "trackOver": false,
+                                        "stripeRows": false
+                                    },
+                                    "designerId": "d661447b-3195-4d33-ba41-e5a0799a2256",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "getRowClass",
+                                                "fn": "getRowClass",
+                                                "designer|params": [
+                                                    "record",
+                                                    "rowIndex",
+                                                    "rowParams",
+                                                    "store"
+                                                ],
+                                                "implHandler": [
+                                                    "return GLOB.getRowStatus(record);",
+                                                    "",
+                                                    ""
+                                                ]
+                                            },
+                                            "designerId": "712513f8-df66-4688-a531-24c2ae417f84"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "numbercolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyNumberColumn11",
+                                        "hidden": true,
+                                        "dataIndex": "id",
+                                        "text": "id",
+                                        "format": "0,000"
+                                    },
+                                    "designerId": "1f6c134f-c019-4b0f-8d28-bd612501a93e"
+                                },
+                                {
+                                    "type": "gridcolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyColumn6",
+                                        "width": 135,
+                                        "dataIndex": "change_date",
+                                        "text": "Change Date"
+                                    },
+                                    "designerId": "06f07374-ddab-4e1e-aa77-6db1d70fb662",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "editRenderer",
+                                                "fn": "editRenderer",
+                                                "designer|params": [
+                                                    "value",
+                                                    "metaData",
+                                                    "record",
+                                                    "rowIndex",
+                                                    "colIndex",
+                                                    "store",
+                                                    "view"
+                                                ],
+                                                "implHandler": [
+                                                    "return \"\";"
+                                                ]
+                                            },
+                                            "designerId": "df57aaed-f357-4450-a25e-3a7636a5c495"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "gridcolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyColumn4",
+                                        "hidden": true,
+                                        "dataIndex": "status",
+                                        "text": "status"
+                                    },
+                                    "designerId": "79d50056-72d3-47d4-bc7d-7f573c0a26ed"
+                                },
+                                {
+                                    "type": "gridcolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyColumn7",
+                                        "hidden": true,
+                                        "dataIndex": "action",
+                                        "text": "Action"
+                                    },
+                                    "designerId": "b427b6a8-0893-4263-9166-ea798fb608fa"
+                                },
+                                {
+                                    "type": "gridcolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyColumn2",
+                                        "width": 54,
+                                        "align": "right",
+                                        "dataIndex": "year",
+                                        "text": "Year"
+                                    },
+                                    "designerId": "318b7a4f-322c-49a9-a3aa-27d3979fdbda"
+                                },
+                                {
+                                    "type": "gridcolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyColumn3",
+                                        "width": 68,
+                                        "dataIndex": "currency",
+                                        "text": "Currency"
+                                    },
+                                    "designerId": "8ff8dc86-75a2-4390-b095-a7916963eaf6"
+                                },
+                                {
+                                    "type": "numbercolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyNumberColumn1",
+                                        "designer|displayName": "Government Revenue",
+                                        "width": null,
+                                        "align": "right",
+                                        "dataIndex": "gov_revenue",
+                                        "emptyCellText": null,
+                                        "text": "Government Revenue"
+                                    },
+                                    "designerId": "35eb993a-592a-4858-b442-f430fad847b9",
+                                    "cn": [
+                                        {
+                                            "type": "textfield",
+                                            "reference": {
+                                                "name": "editor",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyTextField"
+                                            },
+                                            "designerId": "64aaa629-da02-416f-a1dc-1689e3853daf"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "numbercolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyNumberColumn2",
+                                        "designer|displayName": "Government Spending",
+                                        "align": "right",
+                                        "dataIndex": "gov_spending",
+                                        "text": "Government Spending"
+                                    },
+                                    "designerId": "8411fac5-8264-40d0-abff-8e075fd3cd6a",
+                                    "cn": [
+                                        {
+                                            "type": "textfield",
+                                            "reference": {
+                                                "name": "editor",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyTextField1"
+                                            },
+                                            "designerId": "a0843dc7-fc18-429f-ab41-6823b7749019"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "numbercolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyNumberColumn3",
+                                        "align": "right",
+                                        "dataIndex": "gov_debt",
+                                        "text": "Government Debt"
+                                    },
+                                    "designerId": "7f94f9a1-2c1c-45b6-8da5-2372e631a553",
+                                    "cn": [
+                                        {
+                                            "type": "textfield",
+                                            "reference": {
+                                                "name": "editor",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyTextField2"
+                                            },
+                                            "designerId": "8fcdbc00-5fb4-48b6-80b9-e928651347ef"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "numbercolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyNumberColumn4",
+                                        "align": "right",
+                                        "dataIndex": "int_on_gov_debt",
+                                        "text": "Interest Expense"
+                                    },
+                                    "designerId": "d5b68c7c-b67f-4631-8bbe-0cde9b0bf398",
+                                    "cn": [
+                                        {
+                                            "type": "textfield",
+                                            "reference": {
+                                                "name": "editor",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyTextField4"
+                                            },
+                                            "designerId": "ef47fe0e-d519-4344-a9e3-82544ce29c1d"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "numbercolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyNumberColumn7",
+                                        "hidden": false,
+                                        "align": "right",
+                                        "dataIndex": "soverign_debt_crisis_domestic",
+                                        "text": "Domestic Debt Crisis",
+                                        "format": "0,000"
+                                    },
+                                    "designerId": "cf07aedc-8f7b-4014-84f1-a93f6f16d0e1",
+                                    "cn": [
+                                        {
+                                            "type": "textfield",
+                                            "reference": {
+                                                "name": "editor",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyTextField3"
+                                            },
+                                            "designerId": "59a03ebb-1c30-4da4-ba35-ea783fb18556"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "numbercolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyNumberColumn8",
+                                        "hidden": false,
+                                        "align": "right",
+                                        "dataIndex": "sovereign_debt_crisis_external",
+                                        "text": "Foreign Debt Crisis",
+                                        "format": "0,000"
+                                    },
+                                    "designerId": "81521275-c37f-4b35-b4d5-a31bbdcd1246",
+                                    "cn": [
+                                        {
+                                            "type": "textfield",
+                                            "reference": {
+                                                "name": "editor",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyTextField5"
+                                            },
+                                            "designerId": "355f657f-48cf-4d73-b136-61adaea7c345"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "gridcolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyColumn3",
+                                        "id": "userCommentsId",
+                                        "itemId": "userCommentsItemId",
+                                        "defaultWidth": 200,
+                                        "dataIndex": "user_comment",
+                                        "text": "User Comments"
+                                    },
+                                    "designerId": "a29e2186-0f89-4ecb-849b-c0ea99241b3d",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "editRenderer",
+                                                "fn": "editRenderer",
+                                                "designer|params": [
+                                                    "value",
+                                                    "metaData",
+                                                    "record",
+                                                    "rowIndex",
+                                                    "colIndex",
+                                                    "store",
+                                                    "view"
+                                                ],
+                                                "implHandler": [
+                                                    "return '<button class=\"addCommentButton\" onclick=\"GLOB.showCommentWindow()\">'+",
+                                                    "'<img src=\"images/comment2.png\" >'+",
+                                                    "'Add comment</button>';",
+                                                    ""
+                                                ]
+                                            },
+                                            "designerId": "83c8dae3-c6a0-4171-937a-d8c99938df8e"
+                                        },
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "renderer",
+                                                "fn": "renderer",
+                                                "designer|params": [
+                                                    "value",
+                                                    "metaData",
+                                                    "record",
+                                                    "rowIndex",
+                                                    "colIndex",
+                                                    "store",
+                                                    "view"
+                                                ],
+                                                "implHandler": [
+                                                    "if (!value) return '';",
+                                                    "if (value.length>0) return \"comm..\";",
+                                                    "return '';"
+                                                ]
+                                            },
+                                            "designerId": "f5c43b4f-d932-4ba4-908a-fc729b52cdec"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "gridcolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyColumn3",
+                                        "style": "white-space:nowrap;",
+                                        "defaultWidth": 200,
+                                        "dataIndex": "comments",
+                                        "text": "Comments"
+                                    },
+                                    "configAlternates": {
+                                        "style": "string"
+                                    },
+                                    "designerId": "57b9b1be-fc0c-4605-9e9b-9dc101d201c0",
+                                    "cn": [
+                                        {
+                                            "type": "fixedfunction",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "editRenderer",
+                                                "fn": "editRenderer",
+                                                "designer|params": [
+                                                    "value",
+                                                    "metaData",
+                                                    "record",
+                                                    "rowIndex",
+                                                    "colIndex",
+                                                    "store",
+                                                    "view"
+                                                ],
+                                                "implHandler": [
+                                                    "return \"\";"
+                                                ]
+                                            },
+                                            "designerId": "58f9cb54-8323-45b8-859b-ec78ed2e5071"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "numbercolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyNumberColumn5",
+                                        "hidden": false,
+                                        "align": "right",
+                                        "dataIndex": "currency_crisis",
+                                        "text": "Currency Crisis",
+                                        "format": "0,000"
+                                    },
+                                    "designerId": "efa95370-878d-44ec-ac82-32042d366ebe"
+                                },
+                                {
+                                    "type": "numbercolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyNumberColumn6",
+                                        "hidden": false,
+                                        "align": "right",
+                                        "dataIndex": "inflation_crisis",
+                                        "text": "Inflation Crisis",
+                                        "format": "0,000"
+                                    },
+                                    "designerId": "f8357034-cf27-4323-869b-bd6544c1dadb"
+                                },
+                                {
+                                    "type": "numbercolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyNumberColumn9",
+                                        "hidden": false,
+                                        "align": "right",
+                                        "dataIndex": "domestic_plus_external_debt_gdp",
+                                        "text": "Domestic &amp; External Debt/GDP Ratio"
+                                    },
+                                    "designerId": "bf553163-8dba-449d-b77e-fba8a5ef10b8"
+                                },
+                                {
+                                    "type": "numbercolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyNumberColumn10",
+                                        "hidden": false,
+                                        "align": "right",
+                                        "dataIndex": "public_plus_private_debt_gdp",
+                                        "text": "Private Debt/GDP Ratio"
+                                    },
+                                    "designerId": "15a094e9-8ff8-4a14-a3de-a940cfc90b5b"
+                                },
+                                {
+                                    "type": "numbercolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyNumberColumn11",
+                                        "hidden": false,
+                                        "align": "right",
+                                        "dataIndex": "debt_gnp",
+                                        "text": "Debt/GNP Ratio"
+                                    },
+                                    "designerId": "8ee972db-729c-4514-8727-7bb4f2132ed8"
+                                },
+                                {
+                                    "type": "gridcolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyColumn4",
+                                        "hidden": true,
+                                        "dataIndex": "source",
+                                        "text": "Source"
+                                    },
+                                    "designerId": "22f810d8-a4f4-4605-b56a-5013ec3f617a",
+                                    "cn": [
+                                        {
+                                            "type": "textareafield",
+                                            "reference": {
+                                                "name": "editor",
+                                                "type": "object"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyTextArea"
+                                            },
+                                            "designerId": "7b988130-de4a-4ef2-9d48-4ed8259a4499"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "onGridFiscalDataSelect",
+                                        "fn": "onGridFiscalDataSelect",
+                                        "implHandler": [
+                                            "GLOB.showTextOnTheCommentPanel(record.raw.user_comment);",
+                                            "GLOB.showFiscalDataLogLater();"
+                                        ],
+                                        "name": "select",
+                                        "scope": "me"
+                                    },
+                                    "designerId": "e631d212-e559-4823-9c72-6fb47b84a58f"
+                                },
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "onGridFiscalDataBeforeEdit",
+                                        "fn": "onGridFiscalDataBeforeEdit",
+                                        "implHandler": [
+                                            "return GLOB.getUserName()!='' ;"
+                                        ],
+                                        "name": "beforeedit",
+                                        "scope": "me"
+                                    },
+                                    "designerId": "38e5d0cd-a98c-41b5-b7d9-d57a74d21721"
+                                },
+                                {
+                                    "type": "basiceventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "onGridFiscalDataEdit",
+                                        "fn": "onGridFiscalDataEdit",
+                                        "implHandler": [
+                                            "GLOB.saveChangesToFiscalData();"
+                                        ],
+                                        "name": "edit",
+                                        "scope": "me"
+                                    },
+                                    "designerId": "e7c8ae74-9a84-4f6b-84d2-acb3bc3365e1"
+                                },
+                                {
+                                    "type": "gridcolumn",
+                                    "reference": {
+                                        "name": "columns",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|userClassName": "MyColumn5",
+                                        "dataIndex": "changed_by",
+                                        "text": "Changed by"
+                                    },
+                                    "designerId": "08249cfb-f8b4-4c54-84a8-718905a20713"
+                                },
+                                {
+                                    "type": "rowselectionmodel",
+                                    "reference": {
+                                        "name": "selModel",
+                                        "type": "object"
+                                    },
+                                    "codeClass": "Ext.selection.RowModel",
+                                    "userConfig": {
+                                        "designer|userClassName": "MyRowSelectionModel"
+                                    },
+                                    "designerId": "96be07af-315a-489d-9116-9d1e55845bca"
+                                },
+                                {
+                                    "type": "gridroweditingplugin",
+                                    "reference": {
+                                        "name": "plugins",
+                                        "type": "array"
+                                    },
+                                    "codeClass": "Ext.grid.plugin.RowEditing",
+                                    "userConfig": {
+                                        "designer|userClassName": "MyRowEditingPlugin",
+                                        "pluginId": "rowEditor",
+                                        "clicksToMoveEditor": 1
+                                    },
+                                    "designerId": "fc6849ea-0f4e-4d13-bce9-036af57a73ac"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "panel",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|collapseMode": "mini",
+                                "layout|region": "east",
+                                "layout|split": true,
+                                "designer|userClassName": "MyPanel2",
+                                "border": "1 1 1 0",
+                                "hidden": true,
+                                "hideMode": "visibility",
+                                "id": "panelRecordComments",
+                                "padding": null,
+                                "width": 250,
+                                "layout": "border",
+                                "bodyStyle": [
+                                    "{",
+                                    "    background-color:white;",
+                                    "}"
+                                ],
+                                "animCollapse": false,
+                                "closable": false,
+                                "closeAction": "hide",
+                                "collapsed": false,
+                                "collapsible": false,
+                                "frameHeader": false,
+                                "header": false,
+                                "hideCollapseTool": false,
+                                "title": "User comments to the record",
+                                "titleCollapse": false
+                            },
+                            "designerId": "c9424d82-8504-4e12-af94-015794e06f86",
+                            "cn": [
+                                {
+                                    "type": "container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|region": "north",
+                                        "container|align": "middle",
+                                        "container|pack": null,
+                                        "container|padding": "0 1 0 8 0",
+                                        "designer|userClassName": "MyContainer7",
+                                        "border": null,
+                                        "height": 24,
+                                        "style": [
+                                            "{",
+                                            "    border-bottom: 1px solid silver;",
+                                            "}"
+                                        ],
+                                        "layout": "hbox"
+                                    },
+                                    "designerId": "eba1b1ae-3f0d-49a0-9ac7-0b8705a21be7",
+                                    "cn": [
+                                        {
+                                            "type": "label",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "MyLabel4",
+                                                "style": "color:#333; font-size:11px;",
+                                                "text": "USERS COMMENTS TO THE RECORD"
+                                            },
+                                            "configAlternates": {
+                                                "style": "string"
+                                            },
+                                            "designerId": "30097e3e-534a-4b8f-b62f-31f15408cd06"
+                                        },
+                                        {
+                                            "type": "container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": 1,
+                                                "designer|userClassName": "MyContainer9"
+                                            },
+                                            "designerId": "bc750e61-7b7e-46b2-8bb9-5f45dadfd879"
+                                        },
+                                        {
+                                            "type": "container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": null,
+                                                "designer|userClassName": "MyContainer11",
+                                                "html": [
+                                                    "<img src=\"images/gtk_close.png\" style=\"width:16px; height:16px;cursor:pointer;\" onclick=\"GLOB.hideCommentsPanel()\" >",
+                                                    ""
+                                                ]
+                                            },
+                                            "designerId": "1eda59d9-fe58-434f-9160-031b3d50ab22"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 1,
+                                        "layout|region": "center",
+                                        "layout|split": true,
+                                        "designer|userClassName": "MyContainer4",
+                                        "border": null,
+                                        "id": "commentContainer",
+                                        "padding": 5,
+                                        "style": [
+                                            "{",
+                                            "    background-color:#FFF;",
+                                            "    border-bottom:1px solid silver;",
+                                            "}"
+                                        ],
+                                        "autoScroll": true
+                                    },
+                                    "designerId": "ae60d793-0b27-4fe1-9232-dae4c2b0635d"
+                                },
+                                {
+                                    "type": "container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": 0.4,
+                                        "layout|region": "south",
+                                        "layout|split": true,
+                                        "container|align": "stretch",
+                                        "designer|userClassName": "MyContainer5",
+                                        "height": 150,
+                                        "maxHeight": 200,
+                                        "minHeight": 50,
+                                        "padding": null,
+                                        "layout": "vbox"
+                                    },
+                                    "designerId": "504b4820-f040-4324-94a8-c9bde45759a8",
+                                    "cn": [
+                                        {
+                                            "type": "textareafield",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": 1,
+                                                "designer|userClassName": "MyTextArea2",
+                                                "border": null,
+                                                "id": "newCommentTextArea",
+                                                "style": null,
+                                                "fieldLabel": "Label",
+                                                "hideLabel": true
+                                            },
+                                            "configAlternates": {
+                                                "style": "string"
+                                            },
+                                            "designerId": "5357b2f4-8947-44cb-b7b4-7fb47a5c2464"
+                                        },
+                                        {
+                                            "type": "container",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "layout|flex": null,
+                                                "container|align": "stretch",
+                                                "container|pack": "end",
+                                                "container|padding": "0 4 4 0",
+                                                "designer|userClassName": "MyContainer6",
+                                                "layout": "hbox"
+                                            },
+                                            "designerId": "64cdd656-8949-4056-85b5-8f6c93ea0882",
+                                            "cn": [
+                                                {
+                                                    "type": "button",
+                                                    "reference": {
+                                                        "name": "items",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "layout|margins": null,
+                                                        "designer|userClassName": "MyButton8",
+                                                        "icon": "images/comment2.png",
+                                                        "text": "Add"
+                                                    },
+                                                    "designerId": "03062b94-fab3-4604-9932-65eea72b1757",
+                                                    "cn": [
+                                                        {
+                                                            "type": "basiceventbinding",
+                                                            "reference": {
+                                                                "name": "listeners",
+                                                                "type": "array"
+                                                            },
+                                                            "codeClass": null,
+                                                            "userConfig": {
+                                                                "designer|userClassName": "onButtonClick",
+                                                                "fn": "onButtonClick",
+                                                                "implHandler": [
+                                                                    "GLOB.addCommentHandler();"
+                                                                ],
+                                                                "name": "click",
+                                                                "scope": "me"
+                                                            },
+                                                            "designerId": "b30ee081-a609-410b-a73c-a6307a5985e0"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "linkedinstance",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "height": 200,
+                                "hidden": true,
+                                "layout|flex": 0.7,
+                                "layout|region": "south",
+                                "layout|split": true
+                            },
+                            "designerId": "b3af1745-d539-4daf-a3de-92f2e536106a",
+                            "masterInstanceId": "ExtBox1-ext-gen11014"
+                        }
+                    ]
+                },
+                {
+                    "type": "panel",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|snapToGrid": 10,
+                        "designer|userClassName": "MyPanel",
+                        "hidden": false,
+                        "html": [
+                            "",
+                            "<iframe style=\"width:100%; height:100%; border:none\" src=\"comments/comments.html\"></iframe>",
+                            ""
+                        ],
+                        "layout": "absolute",
+                        "collapsed": false,
+                        "header": false,
+                        "hideCollapseTool": true,
+                        "title": "Leave a comment"
+                    },
+                    "designerId": "5a0a7843-86ff-4777-9a2f-a2eb98bdb684",
+                    "cn": [
+                        {
+                            "type": "toolbar",
+                            "reference": {
+                                "name": "dockedItems",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|x": 317,
+                                "layout|y": 209,
+                                "dock": "top",
+                                "container|pack": "end",
+                                "container|padding": 2,
+                                "designer|userClassName": "MyToolbar1",
+                                "style": [
+                                    "{",
+                                    "background-color: white; ",
+                                    "background-image:none;",
+                                    "}"
+                                ]
+                            },
+                            "designerId": "11052ce4-f073-486f-9680-89199d691a9b",
+                            "cn": [
+                                {
+                                    "type": "button",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "layout|flex": null,
+                                        "designer|userClassName": "MyButton2",
+                                        "id": "btnShowFiscalData",
+                                        "text": "Back to Fiscal Data"
+                                    },
+                                    "designerId": "1157b17a-b291-41f2-90fb-7ed323ad47e8",
+                                    "cn": [
+                                        {
+                                            "type": "basiceventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "designer|userClassName": "onBtnShowFiscalDataClick",
+                                                "fn": "onBtnShowFiscalDataClick",
+                                                "implHandler": [
+                                                    "Ext.getCmp('container').getLayout().setActiveItem(0);"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "designerId": "08fd6a97-54c0-4926-ae4f-f4c40f44634f"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "container",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "layout|region": "south",
+                "designer|userClassName": "MyContainer12",
+                "height": null,
+                "id": "footerContainer",
+                "loader": [
+                    "{",
+                    "    url: \"footer.html\",",
+                    "    autoLoad: true",
+                    "}"
+                ],
+                "padding": "5 0 2 0"
+            },
+            "designerId": "2d05a86f-7aac-43de-8ee4-f2e70e9f40f1"
+        }
+    ]
+}

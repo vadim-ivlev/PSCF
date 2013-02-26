@@ -1,0 +1,627 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "FiscalDataLogModel",
+        "idProperty": "log_id"
+    },
+    "id": "ExtBox1-ext-gen9654",
+    "designerId": "747cbd27-4347-4f1c-89f4-66a0d3f8a408",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field22",
+                "name": "iso"
+            },
+            "designerId": "74486bca-6b0e-492f-9ada-17fef9b1fa5a"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field23",
+                "name": "currency"
+            },
+            "designerId": "b4c54afc-09a7-4bd1-b9e8-ed95e2fe25f6"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field24",
+                "name": "year"
+            },
+            "designerId": "b71de765-2307-48df-a828-63ad6f84eb2d"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field25",
+                "name": "debt_exports"
+            },
+            "designerId": "578c0523-b4bf-4cf5-9153-cf7764528222"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field26",
+                "name": "public_plus_private_debt_gdp"
+            },
+            "designerId": "d5f17f47-70f4-49b7-91a2-3149654fbc2e"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field27",
+                "name": "domestic_plus_external_debt_gdp"
+            },
+            "designerId": "0dae247b-f19a-4bc3-b856-3a92d659531a"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field28",
+                "name": "debt_gnp"
+            },
+            "designerId": "b406c25c-c099-4435-9298-db0b3559d4bf"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field29",
+                "name": "currency_crisis"
+            },
+            "designerId": "974ce153-a3c6-49ac-bce1-8f0358bc3a05"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field30",
+                "name": "inflation_crisis"
+            },
+            "designerId": "910b686d-9a78-4ebc-8509-480be0fbaa35"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field31",
+                "name": "stock_market_crash"
+            },
+            "designerId": "be190e7a-7d57-4810-b453-7b833ded237b"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field32",
+                "name": "soverign_debt_crisis_domestic"
+            },
+            "designerId": "aea51f87-7327-4603-91f1-968ecb2c3d65"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field33",
+                "name": "sovereign_debt_crisis_external"
+            },
+            "designerId": "44ace32f-fb2a-4afd-9642-dc975903f91e"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field34",
+                "name": "banking_crisis"
+            },
+            "designerId": "37b72583-b7f4-4d00-8cd5-f2e672667438"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field35",
+                "name": "crisis_tally"
+            },
+            "designerId": "8e5930c2-7c28-4945-97da-fcb2f9e29957"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field36",
+                "name": "gov_revenue"
+            },
+            "designerId": "d5e09c48-4daf-4a26-aef2-b48fad03b078"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field37",
+                "name": "gov_spending"
+            },
+            "designerId": "cade99bc-3b70-47a9-b69c-289202a3af15"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field38",
+                "name": "gov_debt"
+            },
+            "designerId": "d2f1fce7-89df-4c0b-8a58-f5c82c699af7"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field39",
+                "name": "int_on_gov_debt"
+            },
+            "designerId": "25b3196f-8fe7-4d2e-bdd9-4655cefd62b5"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field40",
+                "name": "Short_term_interest_rate"
+            },
+            "designerId": "303dc45b-0bb4-4877-8693-1e6fc7fd30d8"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field41",
+                "name": "gdp"
+            },
+            "designerId": "f9b65537-e0b6-446d-8e56-c3170d545a62"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field42",
+                "name": "gov_bond_yield"
+            },
+            "designerId": "1a89bad8-0784-4afe-bfde-e20a2c3fb476"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field43",
+                "name": "price_index"
+            },
+            "designerId": "e9a79520-933e-4421-912d-2acb3f866493"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field44",
+                "name": "int_revenue"
+            },
+            "designerId": "f1f41bfa-79aa-4c6b-8cd3-64371ab35dc3"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field45",
+                "name": "outstanding_bond"
+            },
+            "designerId": "1512a540-3895-4b4d-a471-fc6997675a00"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field46",
+                "name": "avg_maturity"
+            },
+            "designerId": "24e143d4-63d4-4b6a-aa53-e17e2ed4f1d5"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field47",
+                "name": "int_expense_general"
+            },
+            "designerId": "1a2f1fcc-17d7-4737-880a-47a615d93bd4"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field48",
+                "name": "gov_revenue_general"
+            },
+            "designerId": "8d1369b8-4bb8-4bb7-a92e-de73626923b6"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field49",
+                "name": "gov_spending_general"
+            },
+            "designerId": "318b6554-a8f1-42db-ac06-2e8778281006"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field50",
+                "name": "source"
+            },
+            "designerId": "e3caf8ab-b130-4e35-a01b-54ad21c51bc3"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field51",
+                "name": "income_tax_revenue"
+            },
+            "designerId": "4a610ac4-70f0-4bcf-9927-30822fc13f94"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field52",
+                "name": "consumption_tax_revenue"
+            },
+            "designerId": "8270fe2e-6835-4ed2-bc3c-3007de4185d5"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field53",
+                "name": "military_spending"
+            },
+            "designerId": "6eacaf09-0380-43e6-ae8e-b1d6c610ea06"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field54",
+                "name": "social_insurance_spending"
+            },
+            "designerId": "86f81377-2a98-43ce-9309-330a6dd85e71"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field55",
+                "name": "health_expenditure"
+            },
+            "designerId": "1f2549ed-aee7-4e6e-9d79-0451d8bd07de"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field56",
+                "name": "comments"
+            },
+            "designerId": "458bc28e-5d0c-49d2-b206-fc812287106f"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field57",
+                "name": "user_comment"
+            },
+            "designerId": "3a733e2c-f1f9-432c-a273-3720d62e1d7f"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field58",
+                "name": "domestic_debt"
+            },
+            "designerId": "eed5c4ec-700f-43b6-9f49-a3f73da10460"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field59",
+                "name": "foreign_debt"
+            },
+            "designerId": "d1e7e47c-eafc-4b59-9a1d-670e0be5543b"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field60",
+                "name": "changed_by"
+            },
+            "designerId": "137adca3-269f-4608-a74f-3d15a487522d"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field61",
+                "name": "change_date"
+            },
+            "designerId": "3dcc2a5d-22c3-47a9-a0ab-a2c037c3f2e7"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field62",
+                "name": "action"
+            },
+            "designerId": "e17ef516-9228-4ec7-814d-bb49b3cd3e12"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field63",
+                "name": "status"
+            },
+            "designerId": "a6734f0e-c3d2-458a-ae98-ff63c926adc9"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field64",
+                "name": "id"
+            },
+            "designerId": "dcd68dbd-1148-4017-8c17-ff5fee37447f"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field114",
+                "name": "active"
+            },
+            "designerId": "bfdc3cd6-bc1e-4571-86bb-fad455a36143"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field115",
+                "name": "verified_by"
+            },
+            "designerId": "f7c8c61f-89fe-4fec-96e4-24034d298f38"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field116",
+                "name": "verification_date"
+            },
+            "designerId": "7b63ac22-69e5-4dfc-9e85-c1c9927c2606"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field117",
+                "name": "log_id"
+            },
+            "designerId": "13a51279-af59-4222-9be5-c037d92ac64f"
+        }
+    ]
+}

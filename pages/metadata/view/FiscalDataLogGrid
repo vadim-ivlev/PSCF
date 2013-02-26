@@ -1,0 +1,1030 @@
+{
+    "type": "gridpanel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "FiscalDataLogGrid",
+        "designer|userAlias": "fiscaldataloggrid",
+        "id": "fiscalDataLogGrid",
+        "animCollapse": false,
+        "header": false,
+        "title": "Audit trail",
+        "hideHeaders": false,
+        "scroll": null,
+        "sortableColumns": false,
+        "store": "LogStore"
+    },
+    "id": "ExtBox1-ext-gen11014",
+    "designerId": "0e38a83a-96ae-4622-b97e-523d9a3a4445",
+    "cn": [
+        {
+            "type": "gridcelleditingplugin",
+            "reference": {
+                "name": "plugins",
+                "type": "array"
+            },
+            "codeClass": "Ext.grid.plugin.CellEditing",
+            "userConfig": {
+                "designer|userClassName": "MyCellEditingPlugin",
+                "clicksToEdit": 1
+            },
+            "designerId": "bfc366b1-b76d-4f0e-85ee-78f22d853c5c"
+        },
+        {
+            "type": "container",
+            "reference": {
+                "name": "dockedItems",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "dock": "top",
+                "container|align": "middle",
+                "container|padding": "0 0 0 0 0",
+                "designer|userClassName": "MyContainer7",
+                "height": 30,
+                "style": [
+                    "{",
+                    "    background-color:white;",
+                    "    border-top: 1px solid silver;",
+                    "}"
+                ],
+                "width": 100,
+                "layout": "hbox"
+            },
+            "designerId": "e5445521-a3ed-4beb-ba94-8af59f72e1c4",
+            "cn": [
+                {
+                    "type": "button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": null,
+                        "layout|margins": "0 6 0 0",
+                        "designer|userClassName": "MyButton10",
+                        "id": "refreshFiscalDataGridLogButton",
+                        "icon": "images/view_refresh.png",
+                        "text": null,
+                        "tooltip": "Refresh"
+                    },
+                    "configAlternates": {
+                        "tooltip": "string"
+                    },
+                    "designerId": "e6b542b5-10eb-42c0-b6af-6e1afbb8797b",
+                    "cn": [
+                        {
+                            "type": "basiceventbinding",
+                            "reference": {
+                                "name": "listeners",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|userClassName": "onRefreshFiscalDataGridLogButtonClick",
+                                "fn": "onRefreshFiscalDataGridLogButtonClick",
+                                "implHandler": [
+                                    "GLOB.refreshFiscalDataLogGrid();"
+                                ],
+                                "name": "click",
+                                "scope": "me"
+                            },
+                            "designerId": "29c89d64-dbf4-4bec-9db5-ddec8a8ded61"
+                        }
+                    ]
+                },
+                {
+                    "type": "label",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyLabel",
+                        "style": "color:#333;  font-size:11px;",
+                        "text": "AUDIT TRAIL"
+                    },
+                    "configAlternates": {
+                        "style": "string"
+                    },
+                    "designerId": "67d678e4-e781-4c3f-a1c5-8b57e3a76218"
+                },
+                {
+                    "type": "container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "layout|flex": 1,
+                        "designer|userClassName": "MyContainer8"
+                    },
+                    "designerId": "775612e3-d3e4-4d12-aada-97be2073a3c4"
+                },
+                {
+                    "type": "container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyContainer10",
+                        "html": [
+                            "",
+                            "<img src=\"images/gtk_close.png\" style=\"width:16px; height:16px;cursor:pointer;\" onclick=\"GLOB.hideHistoryPanel()\" >",
+                            ""
+                        ],
+                        "width": null
+                    },
+                    "designerId": "abbd8efd-5d79-4bc3-8a92-2bc9e10a5517"
+                }
+            ]
+        },
+        {
+            "type": "gridview",
+            "reference": {
+                "name": "viewConfig",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyGridView1",
+                "stripeRows": false
+            },
+            "designerId": "07c398dc-2242-4972-8202-8b000ce39d1b",
+            "cn": [
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "onGridviewAdded",
+                        "fn": "onGridviewAdded",
+                        "implHandler": [
+                            "//this.preserveScrollOnRefresh=true;",
+                            ""
+                        ],
+                        "name": "added",
+                        "scope": "me"
+                    },
+                    "designerId": "42192b6c-8b24-4dc2-a8ba-6c109dc503e5"
+                },
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "getRowClass",
+                        "fn": "getRowClass",
+                        "designer|params": [
+                            "record",
+                            "rowIndex",
+                            "rowParams",
+                            "store"
+                        ],
+                        "implHandler": [
+                            "return GLOB.getRowStatus(record);"
+                        ]
+                    },
+                    "designerId": "140e4867-ecef-470b-85ac-4d8e82da6304"
+                }
+            ]
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn52",
+                "hidden": true,
+                "width": 60,
+                "dataIndex": "id",
+                "text": "Id"
+            },
+            "designerId": "356dbe14-a651-4226-b5de-541b44dadf01"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn56",
+                "hidden": true,
+                "dataIndex": "log_id",
+                "text": "Log_id"
+            },
+            "designerId": "eeab34a1-e519-4734-aeaf-26dc07308110"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn53",
+                "width": 60,
+                "dataIndex": "active",
+                "text": "Active"
+            },
+            "designerId": "9d3f35e3-8fda-4c58-89ad-92b2d8e7f312",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "renderer",
+                        "fn": "renderer",
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "implHandler": [
+                            "return GLOB.getActiveRendererString(value, metaData, record);"
+                        ]
+                    },
+                    "designerId": "396a5417-9058-4bc1-a818-25ea7969571c"
+                }
+            ]
+        },
+        {
+            "type": "actioncolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyActionColumn"
+            },
+            "designerId": "80dcf07a-3e37-46d5-b90f-0bd0301c3656",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "renderer",
+                        "fn": "renderer",
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "implHandler": [
+                            "return GLOB.getStatusRendererString(value, metaData, record);",
+                            "",
+                            "",
+                            ""
+                        ]
+                    },
+                    "designerId": "b5f05a71-1d6f-4f1c-a00e-84ab0c48a473"
+                }
+            ]
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn51",
+                "hidden": true,
+                "width": null,
+                "dataIndex": "status",
+                "text": "Status"
+            },
+            "designerId": "e2a9ee43-0d37-480d-bdba-9b602412e570"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn50",
+                "hidden": true,
+                "width": null,
+                "dataIndex": "action",
+                "text": "Action"
+            },
+            "designerId": "aaaa09a5-56a2-4103-9a85-e2d81229d359"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn10",
+                "hidden": true,
+                "dataIndex": "iso",
+                "text": "Iso"
+            },
+            "designerId": "e6d1e02c-7303-4d02-84db-b599b33649fe"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn12",
+                "width": 46,
+                "dataIndex": "year",
+                "text": "Year"
+            },
+            "designerId": "5bae6778-16be-4db3-b88d-97dabae0d196"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn11",
+                "width": 61,
+                "dataIndex": "currency",
+                "text": "Currency"
+            },
+            "designerId": "e7514bf6-766e-4146-86aa-5ad5c2706b01"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn12",
+                "align": "right",
+                "dataIndex": "gov_revenue",
+                "text": "Government revenue"
+            },
+            "designerId": "a9b5eaf6-5f0c-48bb-9210-96cb5432db08"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn13",
+                "align": "right",
+                "dataIndex": "gov_spending",
+                "text": "Government spending"
+            },
+            "designerId": "213479b8-342f-401a-9604-757324c1a109"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn14",
+                "align": "right",
+                "dataIndex": "gov_debt",
+                "text": "Government debt"
+            },
+            "designerId": "43b0df08-f436-4520-93e6-ea1071004ece"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn15",
+                "align": "right",
+                "dataIndex": "int_on_gov_debt",
+                "text": "Interest Expense"
+            },
+            "designerId": "16aad81a-47a5-4d9b-9ca6-04f4b6bba463"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn16",
+                "align": "right",
+                "dataIndex": "soverign_debt_crisis_domestic",
+                "text": "Domestic Debt Crisis",
+                "format": "0,000"
+            },
+            "designerId": "58d0e585-eb2f-4d0a-a7c8-c886ec09941e"
+        },
+        {
+            "type": "numbercolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyNumberColumn17",
+                "align": "right",
+                "dataIndex": "sovereign_debt_crisis_external",
+                "text": "Foreign Debt Crisis",
+                "format": "0,000"
+            },
+            "designerId": "eff70a62-46b5-4c0a-b870-1d73c7ad24a4"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn45",
+                "dataIndex": "user_comment",
+                "text": "User Comments"
+            },
+            "designerId": "c0d3103a-2213-45d1-a19d-9b095676b223",
+            "cn": [
+                {
+                    "type": "fixedfunction",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "renderer",
+                        "fn": "renderer",
+                        "designer|params": [
+                            "value",
+                            "metaData",
+                            "record",
+                            "rowIndex",
+                            "colIndex",
+                            "store",
+                            "view"
+                        ],
+                        "implHandler": [
+                            "if (!value) return '';",
+                            "if (value.length>0) return \"comments..\";",
+                            "return '';"
+                        ]
+                    },
+                    "designerId": "97a24dd7-11fe-473d-9d43-e448aec9e3d6"
+                }
+            ]
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn13",
+                "hidden": true,
+                "dataIndex": "debt_exports",
+                "text": "Debt_exports"
+            },
+            "designerId": "e1d7163f-6b01-41e1-9540-4c6a3e0b0e15"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn14",
+                "hidden": true,
+                "dataIndex": "public_plus_private_debt_gdp",
+                "text": "Public_plus_private_debt_gdp"
+            },
+            "designerId": "4d037f1d-754e-4bf1-9ee6-c00a55159791"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn15",
+                "hidden": true,
+                "dataIndex": "domestic_plus_external_debt_gdp",
+                "text": "Domestic_plus_external_debt_gdp"
+            },
+            "designerId": "560351c7-acfb-40e2-8c11-3300d617cd35"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn16",
+                "hidden": true,
+                "dataIndex": "debt_gnp",
+                "text": "Debt_gnp"
+            },
+            "designerId": "d82c7bf9-8f24-43a8-ae96-f65b0803b9be"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn17",
+                "hidden": true,
+                "dataIndex": "currency_crisis",
+                "text": "Currency_crisis"
+            },
+            "designerId": "081b6b7a-1145-461e-9bc2-cbe37f1d6eda"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn18",
+                "hidden": true,
+                "dataIndex": "inflation_crisis",
+                "text": "Inflation_crisis"
+            },
+            "designerId": "ae5c01f3-cc47-43cc-9b68-8646882559c0"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn19",
+                "hidden": true,
+                "dataIndex": "stock_market_crash",
+                "text": "Stock_market_crash"
+            },
+            "designerId": "fd23a679-caaa-4f87-904b-c64164db5dc9"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn22",
+                "hidden": true,
+                "dataIndex": "banking_crisis",
+                "text": "Banking_crisis"
+            },
+            "designerId": "cd4571ac-6eae-43b0-a4b3-84d8cf6b5692"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn23",
+                "hidden": true,
+                "dataIndex": "crisis_tally",
+                "text": "Crisis_tally"
+            },
+            "designerId": "8f6c92bf-e6d4-4a9a-a325-1444fa5d1b5d"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn28",
+                "hidden": true,
+                "dataIndex": "Short_term_interest_rate",
+                "text": "Short_term_interest_rate"
+            },
+            "designerId": "a2864124-d3e9-4f7a-aa03-3ea8a8a6400f"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn29",
+                "hidden": true,
+                "dataIndex": "gdp",
+                "text": "Gdp"
+            },
+            "designerId": "016128d9-15da-48c1-a370-ecea037aca56"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn30",
+                "hidden": true,
+                "dataIndex": "gov_bond_yield",
+                "text": "Gov_bond_yield"
+            },
+            "designerId": "12f81f75-0253-47b7-a414-0628f3047170"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn31",
+                "hidden": true,
+                "dataIndex": "price_index",
+                "text": "Price_index"
+            },
+            "designerId": "f082f6ec-714d-4cf3-9759-98548321e574"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn32",
+                "hidden": true,
+                "dataIndex": "int_revenue",
+                "text": "Int_revenue"
+            },
+            "designerId": "e2be2ae6-a447-406f-9859-6ba2e630b97c"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn33",
+                "hidden": true,
+                "dataIndex": "outstanding_bond",
+                "text": "Outstanding_bond"
+            },
+            "designerId": "2c993a5a-6942-4f69-88bc-4f311a42a026"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn34",
+                "hidden": true,
+                "dataIndex": "avg_maturity",
+                "text": "Avg_maturity"
+            },
+            "designerId": "b8453c23-247e-4a52-9f83-710f3e26af2d"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn35",
+                "hidden": true,
+                "dataIndex": "int_expense_general",
+                "text": "Int_expense_general"
+            },
+            "designerId": "adbe63c7-970e-44ee-a648-84d09bf71e61"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn36",
+                "hidden": true,
+                "dataIndex": "gov_revenue_general",
+                "text": "Gov_revenue_general"
+            },
+            "designerId": "66d43ddb-e92b-405e-9f47-6b0a8bf46ab6"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn37",
+                "hidden": true,
+                "dataIndex": "gov_spending_general",
+                "text": "Gov_spending_general"
+            },
+            "designerId": "95846267-aa42-4122-b2c7-591572849abf"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn38",
+                "hidden": true,
+                "dataIndex": "source",
+                "text": "Source"
+            },
+            "designerId": "2d99ff3b-2098-45dc-9c76-11ba79422081"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn39",
+                "hidden": true,
+                "dataIndex": "income_tax_revenue",
+                "text": "Income_tax_revenue"
+            },
+            "designerId": "f5b3f2e5-5c6e-4f4b-99fa-7acfc227f34e"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn40",
+                "hidden": true,
+                "dataIndex": "consumption_tax_revenue",
+                "text": "Consumption_tax_revenue"
+            },
+            "designerId": "3fa2da9b-89e7-474b-ba0e-a6e05e4a7495"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn41",
+                "hidden": true,
+                "dataIndex": "military_spending",
+                "text": "Military_spending"
+            },
+            "designerId": "6b89bc51-91d0-4ed7-a682-aacfffd9e00e"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn42",
+                "hidden": true,
+                "dataIndex": "social_insurance_spending",
+                "text": "Social_insurance_spending"
+            },
+            "designerId": "585f3a76-1f35-4cad-94d3-e90a5e702a91"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn43",
+                "hidden": true,
+                "dataIndex": "health_expenditure",
+                "text": "Health_expenditure"
+            },
+            "designerId": "59cbaa05-caa6-4052-bbed-20dc85f7012c"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn44",
+                "hidden": true,
+                "dataIndex": "comments",
+                "text": "Comments"
+            },
+            "designerId": "8855e54b-25a0-4a90-a115-d4d50b022ad5"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn46",
+                "hidden": true,
+                "dataIndex": "domestic_debt",
+                "text": "Domestic_debt"
+            },
+            "designerId": "c4808653-8346-4f6f-afcd-7a3e1037335c"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn47",
+                "hidden": true,
+                "dataIndex": "foreign_debt",
+                "text": "Foreign_debt"
+            },
+            "designerId": "013451f2-e56f-4cd7-b68f-2ed407127af4"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn48",
+                "dataIndex": "changed_by",
+                "text": "Changed_by"
+            },
+            "designerId": "522a4114-ff73-4b15-9e69-3114c2c6a02a"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn49",
+                "dataIndex": "change_date",
+                "text": "Change_date"
+            },
+            "designerId": "a68575c7-35a9-4ebb-b297-5f673b8f133c"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn54",
+                "dataIndex": "verified_by",
+                "text": "Verified_by"
+            },
+            "designerId": "386a68f0-9db2-43e6-85c9-c2f4c7f40b2a"
+        },
+        {
+            "type": "gridcolumn",
+            "reference": {
+                "name": "columns",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyColumn55",
+                "hidden": true,
+                "dataIndex": "verification_date",
+                "text": "Verification_date"
+            },
+            "designerId": "ef0fe740-0050-41be-bc83-c4d38fb2ff5b"
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onFiscalDataLogGridBeforeEdit",
+                "fn": "onFiscalDataLogGridBeforeEdit",
+                "implHandler": [
+                    "return GLOB.getUserName()!='' ;"
+                ],
+                "name": "beforeedit",
+                "scope": "me"
+            },
+            "designerId": "c1271837-3a3f-42e7-bfab-b54831e72a2a"
+        }
+    ]
+}

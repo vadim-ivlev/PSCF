@@ -1,0 +1,36 @@
+{
+    "type": "button",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "CommentButton",
+        "designer|userAlias": "commentbutton",
+        "icon": "images/comment2.png",
+        "text": "Add comment"
+    },
+    "id": "ucmpCommentButton",
+    "designerId": "4167f9f8-2c65-4fbb-8aca-30c3c0f7a56c",
+    "cn": [
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onButtonClick",
+                "fn": "onButtonClick",
+                "implHandler": [
+                    "GLOB.showCommentWindow();"
+                ],
+                "name": "click",
+                "scope": "me"
+            },
+            "designerId": "cfac1a61-0d4b-457c-820f-2d03561ec813"
+        }
+    ]
+}

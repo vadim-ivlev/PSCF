@@ -1,0 +1,52 @@
+#application: publicsectorcredit #Vadim's place
+application: sovdefdata #Marc's place
+version: 15
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+
+- url: /(login|logout|getusername|getloginlink)
+  script: py.login.app
+
+- url: /main
+  script: py.main.app
+
+- url: /countries
+  script: py.countries.app
+
+- url: /flush_memcache
+  script: py.flush_memcache.app
+
+- url: /fiscal_data_log.*
+  script: py.fiscal_data_log.app
+
+
+- url: /fiscal_data.*
+  script: py.fiscal_data.app
+
+- url: /proxy/.*
+  script: py.proxy.app
+
+
+- url: /pages
+  static_dir: pages
+
+- url: /
+  static_files: pages/app_framed.html
+  upload: pages/app_titled.html
+
+
+- url: /(.*)
+  static_files: pages/\1
+  upload: pages/(.*)
+
+
+
+#- url: /.*
+#  script: py.main.app
+
+
+builtins:
+- remote_api: on

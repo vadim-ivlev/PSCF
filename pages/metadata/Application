@@ -1,0 +1,50 @@
+{
+    "type": "application",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "models": [
+            "FiscalDataModel",
+            "FiscalDataLogModel"
+        ],
+        "stores": [
+            "CountriesJsonStore",
+            "FiscalDataStore",
+            "LogStore"
+        ],
+        "views": [
+            "MyViewport",
+            "AddCommentWindow",
+            "CommentButton"
+        ],
+        "autoCreateViewport": true,
+        "name": "MyApp"
+    },
+    "id": "ExtBox1-ext-gen1587",
+    "designerId": "application",
+    "cn": [
+        {
+            "type": "fixedfunction",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "launch",
+                "fn": "launch",
+                "implHandler": [
+                    "",
+                    "GLOB.launch();",
+                    "",
+                    "",
+                    ""
+                ]
+            },
+            "designerId": "8caea299-d7f4-40f1-8f4a-a294a9841fae"
+        }
+    ]
+}

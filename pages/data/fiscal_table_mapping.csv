@@ -1,0 +1,36 @@
+fiscal_field,readable_name
+iso,ISO
+year,Year
+debt_exports,Debt/Exports
+public_plus_private_debt_gdp,"Public & Private Debt/GDP"
+domestic_plus_external_debt_gdp,"Domestic & External Debt/GDP"
+debt_gnp,Debt/GNP
+currency_crisis,"Currency Crisis"
+inflation_crisis,"Inflation Crisis"
+stock_market_crash,"Stock Market Crash"
+soverign_debt_crisis_domestic,"Domestic Sovereign Debt Crisis"
+sovereign_debt_crisis_external,"External Sovereign Debt Crisis"
+banking_crisis,"Banking Crisis"
+crisis_tally,"Crisis Tally"
+gov_revenue,"Government Revenue"
+gov_spending,"Government Spending"
+gov_debt,"Government Debt"
+int_on_gov_debt,"Interest on Government Debt"
+Short_term_interest_rate,"Short Term Interest Rate"
+gdp,GDP
+gov_bond_yield,"Government Bond Yield"
+price_index,"Price Index"
+source,Source
+income_tax_revenue,"Income Tax Revenue"
+consumption_tax_revenue,"Consumption Tax Revenue"
+military_spending,"Military Spending"
+social_insurance_spending,"Social Insurance Spending"
+health_expenditure,"Health Expenditure"
+comments,Comments
+int_revenue,"Interest / Revenue"
+outstanding_bond,"Outstanding Government Bond"
+avg_maturity,"Average Maturity"
+int_expense_general,"General Government Interest Expense"
+gov_revenue_general,"General Government Revenue"
+gov_spending_general,"General Government Spending"
+currency,Currency

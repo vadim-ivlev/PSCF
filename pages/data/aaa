@@ -1,0 +1,1 @@
+ALTER TABLE `pscf1`.`fiscal_data` CHANGE COLUMN `change_date` `change_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP  ;

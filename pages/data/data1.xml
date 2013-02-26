@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8" ?><table><metadata>
+    <column name='year' label='Year' datatype='number' editable='false'>
+    </column>
+    <column name='currency' label='Currency' datatype='string' editable='false'>
+    </column>
+    <column name='gov_revenue' label='Government Revenue' datatype='double(, 0, dot, comma, 1, N/A)' bar='false' editable='false'>
+    </column>
+    <column name='gov_spending' label='Government Spending' datatype='double(, 0, dot, comma, 1, N/A)' bar='false' editable='false'>
+    </column>
+    <column name='gov_debt' label='Government Debt' datatype='double(, 0, dot, comma, 1, N/A)' bar='false' editable='false'>
+    </column>
+    <column name='int_on_gov_debt' label='Interest Expense' datatype='double(, 0, dot, comma, 1, N/A)' bar='false' editable='false'>
+    </column>
+    <column name='currency_crisis' label='Currency Crisis' datatype='float' bar='false' editable='false'>
+    </column>
+    <column name='inflation_crisis' label='Inflation Crisis' datatype='float' bar='false' editable='false'>
+    </column>
+    <column name='soverign_debt_crisis_domestic' label='Domestic Debt Crisis' datatype='float' bar='false' editable='false'>
+    </column>
+    <column name='sovereign_debt_crisis_external' label='Foreign Debt Crisis' datatype='float' bar='false' editable='false'>
+    </column>
+    <column name='domestic_plus_external_debt_gdp' label='Domestic &amp; External Debt/GDP Ratio' datatype='double(, 3, dot, comma, 1, N/A)' bar='false' editable='false'>
+    </column>
+    <column name='public_plus_private_debt_gdp' label='Public &amp; Private Debt/GDP Ratio' datatype='double(, 3, dot, comma, 1, N/A)' bar='false' editable='false'>
+    </column>
+    <column name='debt_gnp' label='Debt/GNP Ratio' datatype='double(, 3, dot, comma, 1, N/A)' bar='false' editable='false'>
+    </column>
+    <column name='source' label='Source' datatype='string' editable='true'>
+    </column>
+</metadata><data>
+    <row id=''>
+        <column name='year'><![CDATA[2011]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[204801000000.00]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[2010]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[160367000000.00]]></column>
+        <column name='gov_spending'><![CDATA[153817000000.00]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[339763387.13]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[2009]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[126388000000.00]]></column>
+        <column name='gov_spending'><![CDATA[136051000000.00]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[394813071.52]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[2008]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[93630000000.00]]></column>
+        <column name='gov_spending'><![CDATA[115703000000.00]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[267945697.22]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[2007]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[86874000000.00]]></column>
+        <column name='gov_spending'><![CDATA[95710000000.00]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[169469277.01]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[2006]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[64627000000.00]]></column>
+        <column name='gov_spending'><![CDATA[75702000000.00]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[169353007.00]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[2005]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[56643000000.00]]></column>
+        <column name='gov_spending'><![CDATA[53437000000.00]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[2004]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[36034000000.00]]></column>
+        <column name='gov_spending'><![CDATA[39550000000.00]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[2003]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[24811000000.00]]></column>
+        <column name='gov_spending'><![CDATA[31606000000.00]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[2002]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[15295000000.00]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[2001]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[2000]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1999]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1998]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1997]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1996]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1995]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1994]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1993]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1992]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1991]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1990]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1989]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1988]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1987]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1986]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1985]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1984]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1983]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1982]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1981]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+    <row id=''>
+        <column name='year'><![CDATA[1980]]></column>
+        <column name='currency'><![CDATA[AFN]]></column>
+        <column name='gov_revenue'><![CDATA[]]></column>
+        <column name='gov_spending'><![CDATA[]]></column>
+        <column name='gov_debt'><![CDATA[]]></column>
+        <column name='int_on_gov_debt'><![CDATA[]]></column>
+        <column name='currency_crisis'><![CDATA[0]]></column>
+        <column name='inflation_crisis'><![CDATA[0]]></column>
+        <column name='soverign_debt_crisis_domestic'><![CDATA[0]]></column>
+        <column name='sovereign_debt_crisis_external'><![CDATA[0]]></column>
+        <column name='domestic_plus_external_debt_gdp'><![CDATA[]]></column>
+        <column name='public_plus_private_debt_gdp'><![CDATA[]]></column>
+        <column name='debt_gnp'><![CDATA[]]></column>
+        <column name='source'><![CDATA[]]></column>
+    </row>
+</data></table>

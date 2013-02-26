@@ -1,0 +1,14 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "js/globals.js",
+        "defer": false
+    },
+    "id": "ExtBox1-ext-gen45450",
+    "designerId": "ea58a06a-2e35-4216-92d9-d1a49724353b"
+}

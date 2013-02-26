@@ -1,0 +1,90 @@
+{
+    "type": "jsonstore",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "FiscalDataStore",
+        "autoLoad": false,
+        "autoSync": false,
+        "storeId": "fiscalDataStore",
+        "model": "FiscalDataModel",
+        "buffered": false,
+        "pageSize": null,
+        "purgePageCount": 0
+    },
+    "id": "ExtBox1-ext-gen5893",
+    "designerId": "85ca0dd4-e1da-4ee7-8e79-3d105fb7f00a",
+    "cn": [
+        {
+            "type": "ajaxproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyAjaxProxy2",
+                "designer|displayName": "FiscalDataProxy",
+                "api": [
+                    "{",
+                    "//    create  : '/fiscal_data/create',",
+                    "//    read    : '/fiscal_data/read',",
+                    "//    update  : '/fiscal_data/update',",
+                    "//    destroy : '/fiscal_data/destroy'",
+                    "}"
+                ],
+                "url": "/fiscal_data"
+            },
+            "designerId": "428c6679-8e14-4938-9e24-4e69b3e0a134",
+            "cn": [
+                {
+                    "type": "jsonreader",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonReader1",
+                        "idProperty": null
+                    },
+                    "designerId": "f9233831-a969-4bbf-a03e-d4f5aeef0676"
+                },
+                {
+                    "type": "jsonwriter",
+                    "reference": {
+                        "name": "writer",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "MyJsonWriter",
+                        "allowSingle": false
+                    },
+                    "designerId": "088ef943-ed82-41a9-9623-dff96dc754c0"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "onAjaxproxyException",
+                        "fn": "onAjaxproxyException",
+                        "implHandler": [
+                            "alert (\"Fiscal data Exception: \"+ response);"
+                        ],
+                        "name": "exception",
+                        "scope": "me"
+                    },
+                    "designerId": "cbfef07b-6790-4b1c-af17-059c809e3184"
+                }
+            ]
+        }
+    ]
+}

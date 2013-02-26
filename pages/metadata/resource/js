@@ -1,0 +1,13 @@
+{
+    "type": "jsresource",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "url": "//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"
+    },
+    "id": "ExtBox1-ext-gen2193",
+    "designerId": "3d97b1fa-4278-4a37-9205-59934c86b528"
+}
